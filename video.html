@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>videocard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu__item {
+      margin-right: 30px;
+      position: relative;
+    }
+
+    .menu__item::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: #000;
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      transition: all .3s ease-in-out;
+    }
+
+    .menu__item:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header" style="padding: 20px 0;">
+    <div class='container'>
+      <div class="header__inner" style="display: flex; align-items: center;">
+        <a class="logo" href="index.html">
+          <img src="logo.svg" alt="Логотип страницы">
+        </a>
+        <nav class="menu" style="margin-left: 50px;">
+          <ul class="menu__list" style="display: flex; align-items: center;">
+            <li class="menu__item"><a class="menu__link" href="index.html">главная</a></li>
+            <li class="menu__item"><a class="menu__link" href="processor.html">процессоры</a></li>
+            <li class="menu__item"><a class="menu__link" href="motherboard.html">материнские платы</a></li>
+            <li class="menu__item"><a class="menu__link" href="video.html">видеокарты</a></li>
+            <li class="menu__item"><a class="menu__link" href="ram.html">опертивная память</a></li>
+            <li class="menu__item"><a class="menu__link" href="ssd.html">ssd накопители</a></li>
+            <li class="menu__item"><a class="menu__link" href="bp.html">блоки питания</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+  <div class="processor">
+    <div class='container'>
+      <div class="processor__inner" style="display: flex;">
+        <img src="video.jpg" alt="processor" width="350px" height="350px">
+        <div class="processor__text"
+          style="margin-top: 30px; width: 500px; margin-left: 40px; font-size: 22px; line-height: 26px;">
+          Видеока́рта — устройство, преобразующее графический образ, хранящийся как содержимое памяти компьютера, в
+          форму, пригодную для дальнейшего вывода на экран монитора. Обычно видеокарта выполнена в виде печатной платы и
+          вставляется в слот расширения материнской платы, универсальный либо специализированный
+        </div>
+      </div>
+      <p style="font-size: 18px; line-height: 24px;">Видеока́рта (также видеоада́птер[1], видеопла́та[2], графический
+        ада́птер[1], графи́ческая пла́та, графи́ческая ка́рта, графи́ческий ускори́тель[3]) — устройство, преобразующее
+        графический образ, хранящийся как содержимое памяти компьютера (или самого адаптера), в форму, пригодную для
+        дальнейшего вывода на экран монитора. Обычно видеокарта выполнена в виде печатной платы (плата расширения) и
+        вставляется в слот расширения материнской платы, универсальный либо специализированный (AGP[4], PCI
+        Express)[5][6].
+
+        Также широко распространены и расположенные на системной плате видеокарты — как в виде дискретного отдельного
+        чипа GPU, так и в качестве составляющей части северного моста чипсета или ЦПУ; в случае ЦПУ, встроенный
+        (интегрированный[7]) GPU, строго говоря, не может быть назван видеокартой.
+
+        Видеокарты не ограничиваются простым выводом изображения, они имеют встроенный графический процессор, который
+        может производить дополнительную обработку, снимая эту задачу с центрального процессора компьютера[8]. Например,
+        видеокарты Nvidia и AMD (ATi) осуществляют рендеринг графического конвейера OpenGL и DirectX и Vulkan на
+        аппаратном уровне[9].
+
+        Также имеет место тенденция использовать вычислительные возможности графического процессора для решения
+        неграфических задач (например, добычи криптовалюты).</p>
+    </div>
+  </div>
+  
+</body>
+
+</html>

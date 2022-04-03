@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>ssd</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu__item {
+      margin-right: 30px;
+      position: relative;
+    }
+
+    .menu__item::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: #000;
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      transition: all .3s ease-in-out;
+    }
+
+    .menu__item:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header" style="padding: 20px 0;">
+    <div class='container'>
+      <div class="header__inner" style="display: flex; align-items: center;">
+        <a class="logo" href="index.html">
+          <img src="logo.svg" alt="Логотип страницы">
+        </a>
+        <nav class="menu" style="margin-left: 50px;">
+          <ul class="menu__list" style="display: flex; align-items: center;">
+            <li class="menu__item"><a class="menu__link" href="index.html">главная</a></li>
+            <li class="menu__item"><a class="menu__link" href="processor.html">процессоры</a></li>
+            <li class="menu__item"><a class="menu__link" href="motherboard.html">материнские платы</a></li>
+            <li class="menu__item"><a class="menu__link" href="video.html">видеокарты</a></li>
+            <li class="menu__item"><a class="menu__link" href="ram.html">опертивная память</a></li>
+            <li class="menu__item"><a class="menu__link" href="ssd.html">ssd накопители</a></li>
+            <li class="menu__item"><a class="menu__link" href="bp.html">блоки питания</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+  <div class="processor">
+    <div class='container'>
+      <div class="processor__inner" style="display: flex;">
+        <img src="ssd.jpg" alt="processor" width="350px" height="350px">
+        <div class="processor__text"
+          style="margin-top: 30px; width: 500px; margin-left: 40px; font-size: 22px; line-height: 26px;">
+          Твердотельный накопитель — компьютерное энергонезависимое немеханическое запоминающее устройство на основе
+          микросхем памяти, альтернатива жёстким дискам.
+        </div>
+      </div>
+      <p style="font-size: 18px; line-height: 24px;">Твердотельный накопитель (англ. Solid-State Drive, SSD) —
+        компьютерное энергонезависимое немеханическое запоминающее устройство на основе микросхем памяти, альтернатива
+        жёстким дискам (HDD). Наиболее распространённый вид твердотельных накопителей использует для хранения информации
+        флеш-память типа NAND, однако существуют варианты, в которых накопитель создаётся на базе DRAM-памяти,
+        снабжённой дополнительным источником питания — аккумулятором[1]. Помимо собственно микросхем памяти, подобный
+        накопитель содержит управляющий контроллер.
+
+        В настоящее время твердотельные накопители используются как в носимых (ноутбуках, нетбуках, планшетах), так и в
+        стационарных компьютерах для повышения производительности. На 2016 год наиболее производительными выступали SSD
+        формата M.2 с интерфейсом NVMe, у которых при подходящем подключении скорость записи/чтения данных могла
+        достигать 3800 мегабайт в секунду[2].
+
+        По сравнению с традиционными жёсткими дисками твердотельные накопители имеют меньший размер и вес, являются
+        беззвучными, а также многократно более устойчивы к повреждениям (например, при падении) и имеют гораздо бóльшую
+        скорость производимых операций. В то же время, они имеют в несколько раз бóльшую стоимость в пересчёте на
+        гигабайт и меньшую износостойкость (ресурс записи)[</p>
+    </div>
+  </div>
+  
+</body>
+
+</html>

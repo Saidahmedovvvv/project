@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>bp</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu__item {
+      margin-right: 30px;
+      position: relative;
+    }
+
+    .menu__item::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: #000;
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      transition: all .3s ease-in-out;
+    }
+
+    .menu__item:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header" style="padding: 20px 0;">
+    <div class='container'>
+      <div class="header__inner" style="display: flex; align-items: center;">
+        <a class="logo" href="index.html">
+          <img src="logo.svg" alt="Логотип страницы">
+        </a>
+        <nav class="menu" style="margin-left: 50px;">
+          <ul class="menu__list" style="display: flex; align-items: center;">
+            <li class="menu__item"><a class="menu__link" href="index.html">главная</a></li>
+            <li class="menu__item"><a class="menu__link" href="processor.html">процессоры</a></li>
+            <li class="menu__item"><a class="menu__link" href="motherboard.html">материнские платы</a></li>
+            <li class="menu__item"><a class="menu__link" href="video.html">видеокарты</a></li>
+            <li class="menu__item"><a class="menu__link" href="ram.html">опертивная память</a></li>
+            <li class="menu__item"><a class="menu__link" href="ssd.html">ssd накопители</a></li>
+            <li class="menu__item"><a class="menu__link" href="bp.html">блоки питания</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+  <div class="processor">
+    <div class='container'>
+      <div class="processor__inner" style="display: flex;">
+        <img src="bp.jpg" alt="processor" width="350px" height="350px">
+        <div class="processor__text"
+          style="margin-top: 30px; width: 500px; margin-left: 40px; font-size: 22px; line-height: 26px;">
+          Встроенный источник электропитания компьютера — устройство, предназначенное для преобразования напряжения
+          переменного тока от сети в напряжение постоянного тока с целью питания компьютера или компьютер-сервера.
+        </div>
+      </div>
+      <p style="font-size: 18px; line-height: 24px;">Стандарт персонального компьютера (PC-совместимый), согласно
+        спецификации разных лет, должен был обеспечивать выходные напряжения ±5 / ±12 / +3,3 вольт, а также +5 вольт
+        дежурного режима (+5VSB).
+
+        Основными силовыми цепями компьютеров периодически являлись линии напряжения +3,3, +5 и +12 В. Традиционно, чем
+        выше напряжение в линии, тем большая мощность передаётся по данным цепям.
+        Отрицательные напряжения питания (−5 и −12 В) допускали небольшие токи и в современных материнских платах в
+        настоящее время не используются.
+        Напряжение −5 В использовалось только интерфейсом ISA на материнской плате. Для обеспечения −5 В постоянного
+        тока в ATX и ATX12V версии до 1.2 использовался контакт 20 и белый провод. Это напряжение (а также контакт и
+        провод) не является обязательным уже в версии 1.2 и полностью отсутствует в версиях 1.3 и старше.
+        Напряжение −12 В необходимо лишь для полной реализации стандарта последовательного интерфейса RS-232 с
+        использованием микросхем без встроенного инвертора и умножителя напряжения, поэтому также часто отсутствует.
+        Напряжение +12 В используется для питания наиболее мощных потребителей. Разделение питающих напряжений на 12 и 5
+        вольт целесообразно как для снижения токов по печатным проводникам плат, так и для снижения потерь энергии на
+        выходных выпрямительных диодах блока питания.
+        Напряжения ±5, +12, +3,3 В дежурного режима используются материнской платой.
+        Для жёстких дисков, оптических приводов, вентиляторов используются напряжения +5 и +12 В.
+        Наиболее мощные потребители энергии (такие, как видеокарта, центральный процессор, северный мост) подключаются
+        через размещённые на материнской плате или на видеокарте вторичные преобразователи с питанием от цепей как +5 В,
+        так и +12 В.
+        Напряжение +3,3 В в блоке питания формируется из напряжения +5 В, а потому существует ограничение суммарной
+        потребляемой мощности по ±5 и +3,3 В.
+        Напряжение на модулях памяти имеет стойкую тенденцию к уменьшению и для DDR4 SDRAM снизилось до 1,2 вольта.
+        В большинстве случаев, для компьютера в рассматриваемом примере, используется импульсный блок питания,
+        выполненный по полумостовой (двухтактной) схеме. Блоки питания с накапливающими энергию трансформаторами
+        (обратноходовая схема) естественно ограничены по мощности габаритами трансформатора и потому применяются
+        значительно реже. Гораздо чаще встречается схема прямоходового однотактного преобразователя, которая не так
+        ограничена по массо-габаритным показателям. При этом используются те же м/с, что и в обратноходовом
+        преобразователе.
+
+      </p>
+    </div>
+  </div>
+  
+</body>
+
+</html>

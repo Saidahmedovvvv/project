@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>processor</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    .menu__item {
+      margin-right: 30px;
+      position: relative;
+    }
+
+    .menu__item::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: #000;
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      transition: all .3s ease-in-out;
+    }
+
+    .menu__item:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header" style="padding: 20px 0;">
+    <div class='container'>
+      <div class="header__inner" style="display: flex; align-items: center;">
+        <a class="logo" href="index.html">
+          <img src="logo.svg" alt="Логотип страницы">
+        </a>
+        <nav class="menu" style="margin-left: 50px;">
+          <ul class="menu__list" style="display: flex; align-items: center;">
+            <li class="menu__item"><a class="menu__link" href="index.html">главная</a></li>
+            <li class="menu__item"><a class="menu__link" href="processor.html">процессоры</a></li>
+            <li class="menu__item"><a class="menu__link" href="motherboard.html">материнские платы</a></li>
+            <li class="menu__item"><a class="menu__link" href="video.html">видеокарты</a></li>
+            <li class="menu__item"><a class="menu__link" href="ram.html">опертивная память</a></li>
+            <li class="menu__item"><a class="menu__link" href="ssd.html">ssd накопители</a></li>
+            <li class="menu__item"><a class="menu__link" href="bp.html">блоки питания</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+  <div class="processor">
+    <div class='container'>
+      <div class="processor__inner" style="display: flex;">
+        <img src="processor.jpg" alt="processor" width="350px" height="350px">
+        <div class="processor__text"
+          style="margin-top: 30px; width: 500px; margin-left: 40px; font-size: 22px; line-height: 26px;">
+          Центра́льный проце́ссор — электронный блок либо интегральная схема, исполняющая машинные инструкции, главная
+          часть аппаратного обеспечения компьютера или программируемого логического контроллера. Иногда называют
+          микропроцессором или просто процессором.
+        </div>
+      </div>
+      <p style="font-size: 18px; line-height: 24px;">Изначально термин центральное процессорное устройство описывал специализированный класс логических машин,
+        предназначенных для выполнения сложных компьютерных программ. Вследствие довольно точного соответствия этого
+        назначения функциям существовавших в то время компьютерных процессоров он естественным образом был перенесён на
+        сами компьютеры. Начало применения термина и его аббревиатуры по отношению к компьютерным системам было положено
+        в 1960-е годы. Устройство, архитектура и реализация процессоров с тех пор неоднократно менялись, однако их
+        основные исполняемые функции остались теми же, что и прежде.
+
+        Главными характеристиками ЦПУ являются: тактовая частота, производительность, энергопотребление, нормы
+        литографического процесса, используемого при производстве (для микропроцессоров), и архитектура.
+
+        Ранние ЦП создавались в виде уникальных составных частей для уникальных и даже единственных в своём роде
+        компьютерных систем. Позднее от дорогостоящего способа разработки процессоров, предназначенных для выполнения
+        одной единственной или нескольких узкоспециализированных программ, производители компьютеров перешли к серийному
+        изготовлению типовых классов многоцелевых процессорных устройств. Тенденция к стандартизации компьютерных
+        комплектующих зародилась в эпоху бурного развития полупроводниковых элементов, мейнфреймов и мини-компьютеров, а
+        с появлением интегральных схем она стала ещё более популярной. Создание микросхем позволило ещё больше увеличить
+        сложность ЦП с одновременным уменьшением их физических размеров. Стандартизация и миниатюризация процессоров
+        привели к глубокому проникновению основанных на них цифровых устройств в повседневную жизнь человека.
+        Современные процессоры можно найти не только в таких высокотехнологичных устройствах, как компьютеры, но и в
+        автомобилях, калькуляторах, мобильных телефонах и даже в детских игрушках. Чаще всего они представлены
+        микроконтроллерами, где, помимо вычислительного устройства, на кристалле расположены дополнительные компоненты
+        (память программ и данных, интерфейсы, порты ввода-вывода, таймеры и др.). Современные вычислительные
+        возможности микроконтроллера сравнимы с процессорами персональных ЭВМ тридцатилетней давности, а чаще даже
+        значительно превосходят их показатели.</p>
+    </div>
+  </div>
+  
+</body>
+
+</html>
